@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-primary { @apply btn bg-pine text-white hover:bg-pine-dark; }
+.btn-ghost { @apply btn border border-line bg-white hover:bg-paper; }
+
+.field { @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm outline-none focus:border-pine focus:ring-2 focus:ring-pine/15; }
+.label { @apply mb-1.5 block text-xs font-semibold tracking-wide text-ink/60; }
+.card { @apply rounded-xl border border-line bg-white; }
